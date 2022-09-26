@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LetsNote</title>
+
+        <link rel="stylesheet" href="header/style.css" />
+        <link rel="stylesheet" href="mainbody/style.css" />
+        <link rel="stylesheet" href="mainbody/buttons.css" />
+        <link rel="shortcut icon" href="android-chrome-192x192.png" type="image/x-icon">
+    </head>
+
+    <body class="body">
+        <header class="header">
+            <img class="navigationButton" src="assets/menu.svg" />
+            <nav class="navigation">
+                <div class="heading">Your Notes</div>
+                <div class="createNewNotes">Create new note <img class="add" src="assets/add.svg"></div>
+
+                <ul type="none" class="task">
+                    <input class="fileName">
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="buttonsContainer">
+                <div class="buttonSetup">
+                    <select class="fonts">
+                        <option value="Arial">Arial</option>
+                        <option value="Courier New">Courier New</option>
+                        <option value="Franklin Gothic Medium">
+                            Franklin Gothic Medium
+                        </option>
+                        <option value="Gill Sans">Gill Sans</option>
+                        <option value="Lucida Sans">Lucida Sans</option>
+                        <option value="Segoe UI">Segoe UI</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                        <option value="Trebuchet MS">Trebuchet MS</option>
+                        <option value="Cambria">Cambria</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Verdana">Verdana</option>
+                        <option value="monospace">monospace</option>
+                        <option value="sans-serif">sans-serif</option>
+                        <option value="serif">serif</option>
+                    </select>
+
+                    <select class="size" value="24">
+                        <option value="8">8</option>
+                        <option value="10">10</option>
+                        <option value="12">12</option>
+                        <option value="14">14</option>
+                        <option value="16">16</option>
+                        <option value="18">18</option>
+                        <option selected value="20">20</option>
+                        <option value="22">22</option>
+                        <option value="24">24</option>
+                        <option value="26">26</option>
+                        <option value="28">28</option>
+                        <option value="30">30</option>
+                        <option value="32">32</option>
+                        <option value="34">34</option>
+                        <option value="36">36</option>
+                        <option value="38">38</option>
+                        <option value="40">40</option>
+                        <option value="42">42</option>
+                        <option value="44">44</option>
+                        <option value="46">46</option>
+                    </select>
+
+                    <select class="colorPicker">
+                        <option value="red">Red</option>
+                        <option value="yellow">Yellow</option>
+                        <option value="green">Green</option>
+                        <option value="blue">Blue</option>
+                        <option selected value="black">Black</option>
+                        <option value="pink">Pink</option>
+                        <option value="brown">Brown</option>
+                        <option value="cyan">Cyan</option>
+                        <option value="grey">Grey</option>
+                        <option value="orange">Orange</option>
+                    </select>
+
+                    <button class="boldBtn"> <strong>B</strong> </button>
+                    <button class="underlineBtn"> <u>U</u> </button>
+                    <button class="italicBtn"> <i>I</i> </button>
+
+                    <textarea
+                        class="notePad"
+                        placeholder="Start writing..."
+                    ></textarea>
+
+                    <div class="btn">
+                        <input type="button" value="copy" class="copyBtn" />
+                        <!-- <input type="button" value="save" class="saveBtn" /> -->
+                        <input type="button" value="reset" class="resetBtn" />
+                        <input type="button" value="clear" class="clearBtn" />
+                    </div>
+                </div>
+
+                <div class="background">
+                    <button class="changeBG">Change Background</button>
+                </div>
+            </div>
+
+            <div class="notification">
+                Copied to clip-board
+            </div>
+        </main>
+
+        <script src="header/script.js"></script>
+        <script src="mainbody/script.js"></script>
+        <script src="mainbody/fontSize.js"></script>
+        <script src="mainbody/wallpaper.js"></script>
+        <script src="mainbody/copy.js"></script>
+        <script src="mainbody/color.js"></script>
+    </body>
+</html>
